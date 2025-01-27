@@ -80,3 +80,14 @@
         transform: translateY(-4px);
     }
 }
+
+.btn-final{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    .btn{
+        width: 100% !important;
+    }
+}
