@@ -13,6 +13,9 @@ let nome;
 let cellphone;
 let email;
 
+let limitIncresent;
+let limitDecrement;
+
 document.getElementById("potato").innerHTML = countPotato;
 document.getElementById("chicken").innerHTML = countChicken;
 document.getElementById("meat").innerHTML = countMeat;
@@ -148,6 +151,7 @@ function calculate(){
     let total = price + price2;
 
     div.innerHTML = `
+        <br>
         <p>Caro ${nome}</p>
         <p>Seguem os dados do seu pedido.</p>
         <p>O seu pedido é: </p>
@@ -160,5 +164,5 @@ function calculate(){
         <h2>Preço final R$ ${total}</h2>
     `;
 
-    console.log(price, price2, count, count2, choose, total);
+    document.getElementById('resultado').scrollIntoView({ behavior: 'smooth' });
 }
